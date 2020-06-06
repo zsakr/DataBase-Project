@@ -1,0 +1,135 @@
+/* Output
+10000|Computer Science|102306|Gold
+10000|Computer Science|107306|Ronald
+10000|Computer Science|909065|Ziad
+23000|Biology|104306|Katz
+34000|Writing Center||
+43020|Electric Engineering||
+44560|Finance|126600|Silk
+44560|Finance|909965|Kim
+50000|History||
+70000|Physics|103433|Messi
+70000|Physics|903433|Beckham
+*/
+
+/* Output
+10000|Computer Science|208096|Wu
+10000|Computer Science|209086|Srinivasan
+10000|Computer Science|220400|Kardishian
+23000|Biology|202386|Crick
+34000|Writing Center|299400|Zillow
+43020|Electric Engineering||
+44560|Finance|203086|Mozart
+50000|History|202306|Brandt
+50000|History|220300|Janet
+70000|Physics|209686|Kim
+
+/* Output
+85000|Wu
+110000|Mozart
+85000|Singh
+100000|Crick
+100000|Kim
+80000|Brandt
+75000|Janet
+110000|Kardishian
+
+/* Output
+professor|Crick
+professor|Kim
+professor|Kardishian
+professor|Janet
+professor|Singh
+professor|Mozart
+professor|Brandt
+professor|Wu
+
+/* Output
+21
+
+/* Output
+203086|Mozart|110000|Finance
+220400|Kardishian|110000|Computer Science
+
+/* Output
+Gold|1
+Califieri|1
+Messi|1
+Katz|1
+Ahmed|1
+Tim|1
+Ronald|1
+Silk|1
+Brandit|1
+Crick|1
+Mozart|1
+Sing|1
+Sing|1
+Wu|1
+Kim|1
+Janet|1
+Kardishian|1
+Ziad|1
+Karen|1
+Kim|1
+Beckham|1
+
+/* Output
+1|104906
+1|959945
+1|202306
+1|103306
+1|202386
+1|102306
+1|220300
+1|220400
+1|909945
+1|104306
+2|209686
+1|103433
+1|203086
+1|107306
+1|126600
+2|20386
+1|105306
+1|208096
+1|909065
+
+/* Output
+1|909065|Computer Science
+1|909945|Music
+1|909965|Finance
+1|959945|Music
+
+/* Output
+208096|Data Structure and Algorithm
+203086|Millionaire and penny stocks
+204286|Music and Brain
+220400|Hand Gesture and AI
+220300|Evolutions of the brain
+
+/* Output
+Computer Science|Srinivasan|Science Buildings
+Computer Science|Wu|Science Buildings
+Finance|Mozart|Histroy and Finance
+Music|Singh|Histroy and Finance
+Elec.Eng|Singh|Histroy and Finance
+Biology|Crick|Histroy and Finance
+Physics|Kim|Histroy and Finance
+History|Brandt|Histroy and Finance
+History|Janet|Histroy and Finance
+Computer Science|Kardishian|Science Buildings
+Writing Center|Zillow|Histroy and Finance
+
+
+/* Output
+102306|Lab Assistance|50000
+208096|professor|85000
+203086|professor|110000
+20386|professor|75000
+204286|professor|85000
+202386|professor|100000
+209686|professor|100000
+202306|professor|80000
+220300|professor|75000
+220400|professor|110000

@@ -1,0 +1,94 @@
+/* outer JOIN*/
+select dep_ID, d.dep_name, assID, name
+from department as d LEFT OUTER JOIN labAssistan on d.dep_name = labAssistan.dep_name;
+
+
+
+select dep_ID, d.dep_name, prID, name
+from department as d LEFT OUTER JOIN professor on d.dep_name = professor.dep_name;
+
+
+
+
+
+/*
+JOIN
+*/
+SELECT researcher.salary, professor.name as pr
+FROM researcher
+JOIN professor ON professor.prID = researcher.ID;
+
+
+
+
+SELECT researcher.r_positoin, professor.name
+FROM researcher
+inner JOIN professor
+ON researcher.ID = professor.prID
+ORDER BY DOB;
+
+
+
+/*
+Aggregate
+*/
+
+select count(*)
+from researcher;
+
+
+
+select ID, r_name, salary, researcher.dep_name
+from researcher
+where SALARY = (
+select max(salary) from researcher);
+
+
+
+
+select r_name, count(ID) r_count
+from researcher
+group by ID
+order by r_count desc;
+
+
+select count(salary), ID
+from researcher
+group by r_name
+having count(salary) < 50000;
+
+
+
+
+
+
+select count(salary), ID, researcher.dep_name
+from researcher
+group by ID
+having salary between "15" and "5000";
+
+
+
+
+/* subquery
+*/
+SELECT Employee_ID,title
+FROM project
+WHERE Employee_ID == (
+SELECT prID FROM professor WHERE prID= project.Employee_ID);
+
+
+
+select dep_name, name,
+(case when dep_name =
+( select department.dep_name from department
+where dep_location= "South Campus") then 'Science Buildings'
+else 'Histroy and Finance' end) dep_location
+from professor;
+
+
+
+
+select ID,r_positoin,salary
+from researcher
+where salary > (select avg(SALARY) from researcher);
